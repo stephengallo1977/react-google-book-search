@@ -2,9 +2,16 @@
   "name": "react-google-book-search",
   "version": "1.0.0",
   "description": "In this activity, you'll create a new React-based Google Books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +22,16 @@
   "bugs": {
     "url": "https://github.com/stephengallo1977/react-google-book-search/issues"
   },
-  "homepage": "https://github.com/stephengallo1977/react-google-book-search#readme"
+  "homepage": "https://github.com/stephengallo1977/react-google-book-search#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.6.11",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.1"
+  }
 }

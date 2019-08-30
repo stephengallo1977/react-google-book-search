@@ -1,0 +1,10 @@
+.formBtn {
+    background-color: lightblue;
+    border-color: lightblue;
+    float: right;
+}
+
+.formBtn:hover {
+    background-color: red;
+    border-color: red;
+}
