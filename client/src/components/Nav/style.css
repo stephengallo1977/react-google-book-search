@@ -8,24 +8,24 @@ nav.navbar.navbar-default {
 
 .navbar-brand, .nav-item a {
     font-family: 'Rubik', sans-serif;
-    color: #fff;
+    color: white;
 }
 
 .navbar-brand {
-    color: #21D0C2;
+    color: red;
     text-decoration: none;
 }
 
 .navbar-brand:hover {
-    color: #21D0C2
+    color: red
 }
 
 .nav-item a:hover {
-    color: #FF5C62;
+    color: red;
 }
 
 .active {
-    color: #FF5C62;
+    color: red;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px){ 
