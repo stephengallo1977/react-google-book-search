@@ -40,9 +40,9 @@ class Saved extends Component {
           <Col size="md-12">
             <Jumbotron>
                 <BookImg />
-                <h1>Google Books Librarian, at Your Service</h1>
+                <h1>Welcome to Stephen's Google Book Search</h1>
                 
-                <h5>Your Saved Collection:</h5>
+                <h5>Your Saved Book Collection:</h5>
             </Jumbotron>
           </Col>
         </Row>
@@ -58,7 +58,7 @@ class Saved extends Component {
               />
             ) : (
               <div className="mx-auto">
-                  <h3 className="mx-auto text-center">Nothing saved yet, head over to the search page and start saving some books to see them here!</h3>
+                  <h3 className="mx-auto text-center">There are no books saved yet, please go to the search page and this saves the books there!</h3>
               </div>
             )}
           </Col>

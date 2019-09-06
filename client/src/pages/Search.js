@@ -78,9 +78,9 @@ class Search extends Component {
             <Col size="sm-12">
               <Jumbotron>
                 <BookImg />
-                <h1>Google Books Librarian, at Your Service</h1>
+                <h1>Welcome to Google Book Search</h1>
 
-                <h5>Enter a title below to begin searching...</h5>
+                <h5>Please enter a book title below to begin searching...</h5>
               </Jumbotron>
               <form>
                 <Input
